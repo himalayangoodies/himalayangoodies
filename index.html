@@ -64,7 +64,7 @@
             position: relative;
             text-align: center;
             font-size: 2.2vw;
-            margin: 3vw 0 2vw 0;
+            margin: 3vw 0 4vw 0;
         }
 
         .slideshow-container {
@@ -166,8 +166,14 @@
 
         .showcase:hover img:nth-child(2) {
             opacity: 1;
+            border-radius: 1vw;
+            transform: scale(1.2);
+            z-index: 2;
         }
 
+        .showcase:hover img:nth-child(1){
+            opacity: 0;
+        }
         .txt {
             position: relative;
             text-align: center;
@@ -181,6 +187,7 @@
             padding: 0.6vw 0.7vw;
             opacity: 0;
             transition: opacity 0.3s;
+            z-index: 2;
         }
 
         .showcase:hover .txt p {
@@ -392,11 +399,11 @@
 
     <div class="footer">
         <div class="social">
-            <a href="https://instagram.com/womanswearbusiness?igshid=YmMyMTA2M2Y="><img src="pinterest.png"
+            <a href=""><img src="pinterest.png"
                     alt=""></i></a>
-            <a href="https://api.whatsapp.com/send?phone=12122102965" class="whatsapp"><img src="whatsapp.png"
+            <a href="" class="whatsapp"><img src="whatsapp.png"
                     alt=""></i></a>
-            <a href="https://www.pinterest.com/womenswearbusiness/_saved/"><img src="instagram-2.png" alt=""></i></a>
+            <a href=""><img src="instagram-2.png" alt=""></i></a>
         </div>
         <p>himalayangoodies.com</p>
     </div>
@@ -419,7 +426,7 @@
         slideIndex++;
         if (slideIndex > slides.length) { slideIndex = 1 }
         slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 4000);
+        setTimeout(showSlides, 3000);
     }
 </script>
 
