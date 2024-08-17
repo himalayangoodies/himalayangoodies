@@ -167,13 +167,14 @@
         .showcase:hover img:nth-child(2) {
             opacity: 1;
             border-radius: 1vw;
-            transform: scale(1.2);
+            transform: scale(1.17);
             z-index: 2;
         }
 
-        .showcase:hover img:nth-child(1){
+        .showcase:hover img:nth-child(1) {
             opacity: 0;
         }
+
         .txt {
             position: relative;
             text-align: center;
@@ -217,7 +218,8 @@
             margin: 2vw 0 0 0;
             align-items: center;
         }
-        .foooter p{
+
+        .foooter p {
             font-size: 1.5vw;
         }
 
@@ -235,7 +237,54 @@
         .social a img {
             width: 2.5vw;
         }
-        
+
+        @media screen and (max-width: 768px) {
+            .logo img {
+                width: 20vw;
+            }
+
+            nav li a {
+                font-size: 3.5vw;
+            }
+
+            nav li a img {
+                width: 6vw;
+            }
+
+            .slideshow-container {
+                height: 50vw;
+            }
+
+            .text a {
+                font-size: 3vw;
+            }
+
+            .title {
+                font-size: 4vw;
+            }
+
+            .showcase img {
+                width: 40vw;
+            }
+
+            .txt p {
+                font-size: 2.5vw;
+            }
+
+            .txt h1 {
+                font-size: 3vw;
+            }
+
+            .txt h2 {
+                font-size: 2.3vw;
+            }
+            .footer p{
+font-size: 3vw;
+            }
+            .social a img{
+                width: 5vw;
+            }
+        }
     </style>
 </head>
 
@@ -399,10 +448,8 @@
 
     <div class="footer">
         <div class="social">
-            <a href=""><img src="pinterest.png"
-                    alt=""></i></a>
-            <a href="" class="whatsapp"><img src="whatsapp.png"
-                    alt=""></i></a>
+            <a href=""><img src="pinterest.png" alt=""></i></a>
+            <a href="" class="whatsapp"><img src="whatsapp.png" alt=""></i></a>
             <a href=""><img src="instagram-2.png" alt=""></i></a>
         </div>
         <p>himalayangoodies.com</p>
