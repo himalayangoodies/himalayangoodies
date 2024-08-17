@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalayan Presents</title>
+    <style>
+        body {
+            margin: 0 0;
+            padding: 0 0;
+            font-family: Songti Sc;
+            color: #2E4F2E;
+            background-color: #F0F8FF;
+        }
+
+        .navigation {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: -1vw 3vw -1vw 0vw;
+        }
+
+        .logo {
+            position: relative;
+        }
+
+        .logo img {
+            width: 12vw;
+        }
+
+        nav {
+            position: relative;
+            display: flex;
+            gap: 0vw 5vw;
+        }
+
+        li {
+            position: relative;
+            list-style: none;
+        }
+
+        nav li a {
+            position: relative;
+            font-size: 2vw;
+            text-decoration: none;
+            color: #2E4F2E;
+        }
+
+        nav li a img {
+            width: 3vw;
+        }
+
+        .cart {
+            position: relative;
+        }
+
+        .cart img {
+            width: 3vw;
+        }
+
+        .title {
+            position: relative;
+            text-align: center;
+            font-size: 2.2vw;
+            margin: 3vw 0 2vw 0;
+        }
+
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+            width: 100vw;
+            height: 40vw;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 2vw;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        #text2 {
+            left: 27%;
+            bottom: 7vw;
+        }
+
+        #text4 {
+            left: 83%;
+            bottom: 45%;
+        }
+
+        #text5 {
+            left: 73%;
+            bottom: 1vw;
+        }
+
+        .slide-button {
+            background-color: rgba(46, 79, 46, 0.7);
+            color: white;
+            padding: 1vw 2vw;
+            text-decoration: none;
+            font-size: 2vw;
+            border-radius: 0.5vw;
+            display: inline-block;
+            transition: 0.95s;
+        }
+
+        .slide-button:hover {
+            font-size: 2.2vw;
+        }
+
+        .fade {
+            animation-name: fade;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .items {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2vw 5vw;
+        }
+
+        .showcase {
+            position: relative;
+        }
+
+        .showcase img {
+            width: 25vw;
+            transition: opacity 0.5s;
+        }
+
+        .showcase img:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .showcase:hover img:nth-child(2) {
+            opacity: 1;
+        }
+
+        .txt {
+            position: relative;
+            text-align: center;
+        }
+
+        .txt p {
+            position: relative;
+            background-color: #F0F8FF;
+            margin: -4vw 7vw 1vw 7vw;
+            border-radius: 2vw;
+            padding: 0.6vw 0.7vw;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .showcase:hover .txt p {
+            opacity: 1;
+        }
+
+        .txt p:hover {
+            background-color: #2E4F2E;
+            color: #F0F8FF;
+        }
+
+
+        .txt h1 {
+            font-size: 1.8vw;
+        }
+
+        .txt h2 {
+            font-size: 1.5vw;
+        }
+
+        .footer {
+            position: relative;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            gap: 0 7vw;
+            margin: 2vw 0 0 0;
+        }
+
+
+        .footer a {
+            position: relative;
+            padding: 1vw 0;
+        }
+
+        .footer a img {
+            width: 3vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href=""><img src="basket.png" alt="Cart"></a></li>
+        </nav>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="slider1.jpeg" alt="Slide 1">
+            <div class="text" id="text1">
+                <a href="#" class="slide-button">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="slider2.jpeg" alt="Slide 2">
+            <div class="text" id="text2">
+                <a href="#" class="slide-button">Himalayan Daru</a>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="slider3.jpeg" alt="Slide 3">
+            <div class="text" id="text3">
+                <a href="#" class="slide-button">Chabi ka Phtta</a>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="slider4.jpeg" alt="Slide 4">
+            <div class="text" id="text4">
+                <a href="#" class="slide-button">Laughing</a>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="slider5.jpeg" alt="Slide 5">
+            <div class="text" id="text5">
+                <a href="#" class="slide-button">Shop the Collection</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="title">
+        Limited Collection Available Now
+    </div>
+
+    <div class="items">
+        <div class="showcase">
+            <img src="out1.webp" alt="">
+            <img src="in1.webp" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out2.webp" alt="">
+            <img src="in2.webp" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out3.webp" alt="">
+            <img src="in3.webp" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out4.webp" alt="">
+            <img src="in4.webp" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out5.jpg" alt="">
+            <img src="in5.jpg" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out6.jpg" alt="">
+            <img src="in6.jpg" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out7.webp" alt="">
+            <img src="in7.webp" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out8.webp" alt="">
+            <img src="in8.webp" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out9.webp" alt="">
+            <img src="in9.webp" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out10.webp" alt="">
+            <img src="in10.webp" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150 ₹</h2>
+            </div>
+        </div>
+        <div class="showcase">
+            <img src="out11.webp" alt="">
+            <img src="in11.webp" alt="">
+            <div class="txt">
+                <p>Add to Basket</p>
+                <h1>Shareer vale kpde</h1>
+                <h2>150₹</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://instagram.com/womanswearbusiness?igshid=YmMyMTA2M2Y="><img src="pinterest.png" alt=""></i></a>
+        <a href="https://api.whatsapp.com/send?phone=12122102965" class="whatsapp"><img src="whatsapp.png"
+                alt=""></i></a>
+        <a href="https://www.pinterest.com/womenswearbusiness/_saved/"><img src="instagram-2.png" alt=""></i></a>
+    </div>
+
+</body>
+
+</html>
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000);
+    }
+</script>
+
+</body>
+
+</html>
